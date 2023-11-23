@@ -1,0 +1,38 @@
+- what should be instance variables?(fields in obj)
+    - (String) model
+      (String) SN
+      (boolean) power
+      (int) temp,den,FanSP
+      (String) Mode
+- what should be instance methods?(method in obj)
+    - turn on
+        - this method will change power to true;
+        - set temperature ,density from input
+        - set fan speed to 1 and mode to Normal
+        - this method don't return anything
+    - turn off()
+        - this method will change power to false;
+        - set temperature to 0 ,density to 0 ,fan speed to 0 and mode to " "
+        - this method don't return anything
+        - this method don't need input
+    - change fan speed
+        - this method will change fan speed 1 -> 2 -> 3 -> 1 -> ...
+        - this method don't return anything
+        - this method don't need input
+    - change mode
+        - this method will change mode from Normal -> Performance -> Silence -> Normal -> ...
+        - if mode = Normal ,fan Speed don't change
+          if mode = Performance ,fan Speed will change to 3
+          if mode = Silence ,fan Speed will change to 1
+        - this method don't need input
+        - this method don't return anything
+    - show screen
+        - this method get input from object variable (power,temp,den,fanSP,Mode)
+        - this method will print all object variable to Terminal
+- what should be class variables?(fields in class)
+    - (int) count
+- what should be class methods?(method in class)
+    - get count
+        - this method will count an Air-purifier
+        - this method don't need input
+        - this method will return count variable

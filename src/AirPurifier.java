@@ -7,10 +7,10 @@ public class AirPurifier {
     int temp,den,FanSP;
     String Mode = "";
 
-    void turnOn(){
+    void turnOn(int temp,int den){
         power = true;
-        temp = 27;
-        den = 10;
+        this.temp = temp;
+        this.den = den;
         FanSP = 1;
         Mode = "Normal";
     }
@@ -56,10 +56,16 @@ public class AirPurifier {
 
     AirPurifier(String SN){
         model = "Pro"; this.SN = SN;
+        Count++;
     }
     AirPurifier(String model, String SN) {
         this.model = model; this.SN = SN;
+        Count++;
+    }
 
+    static int Count;
+    static int getCount(){
+        return Count;
     }
 
 }
